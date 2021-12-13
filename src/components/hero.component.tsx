@@ -8,9 +8,10 @@ import "../styles/hero.style.css";
 
 export interface Props {
   imgSrc?: string;
+  name?: String;
 }
 
-const Hero: React.FC<Props> = ({ imgSrc, ...props }) => {
+const Hero: React.FC<Props> = ({ imgSrc, name, ...props }) => {
   return (
     <>
       <div className="hero-container">
@@ -29,7 +30,7 @@ const Hero: React.FC<Props> = ({ imgSrc, ...props }) => {
           fS={"5vw"}
           fW={600}
         >
-          NBA
+          {name}
         </Text>
         {props.children}
       </div>

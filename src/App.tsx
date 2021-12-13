@@ -16,7 +16,8 @@ import "./App.css";
 function App() {
   const [data, setData] = React.useState<any[]>();
   const [searchValue, setSearchValue] = React.useState("");
-  const [ currentHeader, setHeader] = React.useState(hero)
+  const [ currentHeader, setHeader] = React.useState(hero);
+  const [ name, setName] = React.useState("NFL");
 
   React.useEffect(() => {
     fetch("https://free-nba.p.rapidapi.com/teams?page=0", {
@@ -55,8 +56,11 @@ function App() {
       }} value={"Here"} onClick={() => {
         if (currentHeader === hero){
           setHeader(NBAhero)
+          setName("NBA")
+          
         }else{
           setHeader(hero)
+          setName("NFL")
         }
          
         }}>Change Header</button>
@@ -64,7 +68,7 @@ function App() {
         <img className="logo" src={logo} alt="wave logo" />
       </div>
       <div className="hero">
-      <Hero imgSrc={currentHeader}>
+      <Hero name={name} imgSrc={currentHeader}>
         
         <Search
           pos={1}
