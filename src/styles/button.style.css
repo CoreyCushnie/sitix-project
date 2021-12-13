@@ -1,0 +1,18 @@
+.button-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 5px 5px 5px 0; 
+    padding: 0 5px;
+    user-select: none;
+    -webkit-box-shadow: inset 3px 4px 6px -6px #141414, 3px 4px 6px -6px #141414; 
+box-shadow: inset 3px 4px 6px -6px #141414, 3px 4px 6px -6px #141414; 
+}
+
+/* 
+width: 20%;
+    display: "flex";
+    */

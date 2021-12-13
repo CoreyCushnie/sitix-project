@@ -1,0 +1,65 @@
+.bottom-left{
+    flex: 1;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.list-container{
+    flex: 5;
+    display: grid;
+    grid-template-columns: auto auto;
+    
+    justify-items: stretch;
+    grid-column-gap: 10px;
+    
+}
+
+.ad-container{
+    display: flex;
+    background-color: #747272;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    
+}
+
+@media only screen and (max-width: 700px) {
+    .bottom-list{
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap-reverse;
+        height: auto;
+        
+    }
+   
+
+    .ad-container{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #747272;
+        justify-content: center;
+        height: 50vw;
+      
+    }
+  }
+
+@media only screen and (max-width: 800px) {
+    .list-container{
+        display: block;
+    }
+
+    .ad-container{
+        margin-top: 10px;
+      
+      
+    }
+    
+
+}
+
+.promotional-message{
+    width: 20%;
+    justify-content: center;
+    text-align: center;
+    
+}
