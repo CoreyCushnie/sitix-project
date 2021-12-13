@@ -1,8 +1,10 @@
 import React from "react";
 
+// Components
 import Text from "./text.component";
 import nbaIcons from "./NBAIcons.component";
 
+// CSS
 import "../styles/game.style.css";
 
 export interface Props {
@@ -12,11 +14,22 @@ export interface Props {
   price?: String;
 }
 
-const GameDetail: React.FC<Props> = ({ teamName, id, abr, price, ...props }) => {
-  
+const GameDetail: React.FC<Props> = ({
+  teamName,
+  id,
+  abr,
+  price,
+  ...props
+}) => {
   return (
     <div key={`${id}`} className="game-container">
-      <div style={{ display: "flex", alignItems:"center", justifyContent: "center" }}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         {nbaIcons(`${abr}`, "5vh")}
         <Text justify={"flex-start"} fW={800} fS={"12px"} fC={"#12294D"}>
           {teamName}

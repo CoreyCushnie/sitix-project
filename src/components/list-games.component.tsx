@@ -1,9 +1,11 @@
 import React from "react";
 
+// Component 
 import GameDetail from "./game.component";
 import Text from "./text.component";
 import Button from "./button.component";
 
+// CSS 
 import "../styles/list-games.style.css";
 
 export interface Props {

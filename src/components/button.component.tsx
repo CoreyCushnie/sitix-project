@@ -1,8 +1,10 @@
 import React from "react";
 
+// Components
 import Text from "./text.component";
-
 import { MdArrowDropUp, MdArrowDropDown } from "react-icons/md";
+
+// CSS
 import "../styles/button.style.css";
 
 export interface Props {
@@ -19,15 +21,15 @@ const Button: React.FC<Props> = ({
   focused,
   ...props
 }) => {
-  
   const textColor = focused ? "white" : "black";
 
   return (
     <div
       className="button-container"
       style={{
-        backgroundColor:
-          focused ? "rgba(0, 0, 0, 0.512)" : "rgba(0, 0, 0, 0.041)",
+        backgroundColor: focused
+          ? "rgba(0, 0, 0, 0.512)"
+          : "rgba(0, 0, 0, 0.041)",
       }}
       onClick={onClick}
     >

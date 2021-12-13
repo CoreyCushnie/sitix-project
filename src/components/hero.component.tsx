@@ -1,7 +1,9 @@
 import React from "react";
 
+// Component
 import Text from "./text.component";
 
+// CSS
 import "../styles/hero.style.css";
 
 export interface Props {
@@ -19,10 +21,17 @@ const Hero: React.FC<Props> = ({ imgSrc, ...props }) => {
           height={"30%"}
           width={"100%"}
         />
-        <Text pos={1} l={15} justify={"flex-start"} fC={"white"} fS={"5vw"} fW={600}>
+        <Text
+          pos={1}
+          l={15}
+          justify={"flex-start"}
+          fC={"white"}
+          fS={"5vw"}
+          fW={600}
+        >
           NBA
         </Text>
-      {props.children}
+        {props.children}
       </div>
     </>
   );

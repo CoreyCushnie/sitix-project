@@ -9,7 +9,6 @@ import NBAhero from "./images/NBAHero.jpeg";
 import Hero from "./components/hero.component";
 import Search from "./components/search.component";
 import ListGames from "./components/list-games.component";
-import Button from "./components/button.component";
 
 // CSS
 import "./App.css";

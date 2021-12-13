@@ -1,7 +1,9 @@
 import React from "react";
 
+// Component 
 import { TiLocation } from "react-icons/ti";
 
+// CSS 
 import "../styles/search.style.css";
 
 export interface Props {
